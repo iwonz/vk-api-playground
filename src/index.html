@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VK Api Playground</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="heading">Usage</h1>
+      <ol class="wizard">
+        <li id="step-1">
+          <a href="https://vk.com/editapp?act=create" target="_blank"
+            >Create VK Standalone application</a
+          >
+        </li>
+        <li id="step-2">
+          Enter Application ID
+          <br />
+          <input id="client-id" type="text" placeholder="Application ID" />
+        </li>
+        <li id="step-3">
+          Select scopes
+          <br />
+          <select id="scopes" multiple></select>
+        </li>
+        <li id="step-4">
+          Copy access_token <a id="access-token-url" href="#" target="_blank">from here</a>
+          <br />
+          <input id="access-token" type="text" placeholder="access_token" />
+        </li>
+      </ol>
+      <h1>Let's code</h1>
+      <div id="editor">
+        function foo(items) { var x = "All this is syntax highlighted"; return x; }
+      </div>
+      <button id="remove-deactivated-followers">Remove deactivated followers</button>
+    </div>
+  </body>
+</html>
